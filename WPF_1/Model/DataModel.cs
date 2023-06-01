@@ -14,7 +14,6 @@ namespace WPF_1.Model
     public class DataModel
     {
         private SqlConnection connection;
-
         public DataModel()
         {
             string connectionString = DBConnection.Connection;
@@ -24,9 +23,10 @@ namespace WPF_1.Model
         public DataTable GetTableData()
         {
             DataTable table = new DataTable();
-
             string query = "SELECT * FROM dbo.Klienci";
+
             SqlCommand command = new SqlCommand(query, connection);
+
 
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
