@@ -13,7 +13,6 @@ namespace WPF_1.ViewModel
         private DataModel datamodel;
         public DataTable TableData { get; set; }
 
-
         public MainWindowViewModel()
         {
             datamodel = new DataModel();

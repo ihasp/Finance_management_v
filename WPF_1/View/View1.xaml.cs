@@ -22,6 +22,11 @@ namespace WPF_1.View
         public View1()
         {
             InitializeComponent();
+
+        }
+        private void CloseButton(object sender, RoutedEventArgs e)
+        { 
+            this.Close();
         }
     }
 }

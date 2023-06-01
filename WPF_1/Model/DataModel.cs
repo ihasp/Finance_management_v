@@ -9,8 +9,6 @@ using System.Runtime.CompilerServices;
 using System.Data;
 
 
-
-
 namespace WPF_1.Model
 {
     public class DataModel

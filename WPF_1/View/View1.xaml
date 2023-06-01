@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="View1" Height="450" Width="800">
     <Grid>
-        <Button Content="This part is not yet implemented."/>
+        <Button Content="This part is not yet implemented." Click="CloseButton"/>
     </Grid>
 </Window>
