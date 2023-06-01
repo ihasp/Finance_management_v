@@ -17,8 +17,6 @@ namespace WPF_1.ViewModel
         {
             datamodel = new DataModel();
             TableData = datamodel.GetTableData();
-    
-
         }
     }
 }
