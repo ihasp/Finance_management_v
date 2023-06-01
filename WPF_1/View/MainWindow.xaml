@@ -6,8 +6,22 @@
         xmlns:local="clr-namespace:WPF_1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="Przycisk" Background="Plum" Foreground="AliceBlue" Content="Jakis Tekst" Height="NaN" Margin="278,352,328,10" Width="NaN" Click="ButtonChangeText"/>
-        <DataGrid ItemsSource="{Binding TableData}" AutoGenerateColumns="True" Margin="0,-113,0,113" />
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" ItemsSource="{Binding TableData}" AutoGenerateColumns="True" Margin="10,10" />
+       <!-- Grid zawierający przyciski z responsywnością-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="Add" Background="Yellow" Foreground="AliceBlue" Content="Dodaj" Height="50"  Width="200" Click="ButtonChangeText"/>
+            <Button Grid.Column="1" x:Name="Edit" Background="AliceBlue" Foreground="Blue" Content="Edytuj" Height="50"  Width="200" Click="ButtonChangeText"/>
+            <Button Grid.Column="2" x:Name="Delete" Background="Red" Foreground="AliceBlue" Content="Usun" Height="50" Width="200" Click="ButtonChangeText"/>
+        </Grid>
     </Grid>
 </Window>
