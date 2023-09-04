@@ -19,9 +19,9 @@
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" x:Name="Add" Background="Yellow" Foreground="AliceBlue" Content="Dodaj" Margin="30" Height="Auto"  Width="Auto" Click="ButtonChangeText"/>
-            <Button Grid.Column="1" x:Name="Edit" Background="AliceBlue" Foreground="Blue" Content="Edytuj" Margin="30" Height="Auto"  Width="Auto" Click="ButtonChangeText"/>
-            <Button Grid.Column="2" x:Name="Delete" Background="Red" Foreground="AliceBlue" Content="Usun" Margin="30" Height="Auto" Width="Auto" Click="ButtonChangeText"/>
+            <Button Grid.Column="0" x:Name="Add" Content="Dodaj" FontSize="20" Margin="30" Height="Auto"  Width="Auto" Click="ButtonChangeText"/>
+            <Button Grid.Column="1" x:Name="Edit" FontSize="20" Content="Edytuj" Margin="30" Height="Auto"  Width="Auto" Click="ButtonChangeText"/>
+            <Button Grid.Column="2" x:Name="Delete" FontSize="20" Content="Usun" Margin="30" Height="Auto" Width="Auto" Click="ButtonChangeText"/>
         </Grid>
     </Grid>
 </Window>
