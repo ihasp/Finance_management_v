@@ -11,22 +11,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_1.ViewModel;
 
 namespace WPF_1.View
 {
     /// <summary>
-    /// Logika interakcji dla klasy View1.xaml
+    /// Interaction logic for ModifyDatabase.xaml
     /// </summary>
-    public partial class View1 : Window
+    public partial class ModifyDatabase : Window
     {
-        public View1()
+        public ModifyDatabase()
         {
             InitializeComponent();
+            DataContext = new ModifyDatabaseViewModel();
+            
+        }
 
-        }
-        private void CloseButton(object sender, RoutedEventArgs e)
-        { 
-            this.Close();
-        }
+      
     }
 }
