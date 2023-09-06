@@ -14,21 +14,6 @@ namespace WPF_1.Model
     public class DataModel
     {
 
-        public class ApplicationDbContext : DbContext
-        {
-            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-                : base(options)
-            {
-            }
-            public DbSet<Customer> Customers { get; set; }
-
-        }
-
-        private void LoadData()
-        {
-            var customers = _context.Set<Customer>().ToList();
-        }
-
 
         private SqlConnection connection;
         public DataModel()

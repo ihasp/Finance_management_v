@@ -6,27 +6,31 @@
         xmlns:local="clr-namespace:WPF_1.View"
         mc:Ignorable="d"
         Title="Zarządzanie finansami" Height="720" Width="1280">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-
-        <!-- Grid zawierający przyciski z responsywnością-->
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <!-- add clicks-->
             <TextBlock Grid.Column="0" TextWrapping="Wrap" Margin="10 0 0 0" Text="Najnowsze zamówienia firm:" VerticalAlignment="Bottom" />
             <Button Grid.Column="2" FontSize="20" Content="Zarządzaj" Margin="10" Height="Auto" Width="Auto" Click="EditButtonClick" />
         </Grid>
         <DataGrid Grid.Row="1" ItemsSource="{Binding MainDataTable}" AutoGenerateColumns="True" Margin="10,10" IsReadOnly="True"/>
-        <DataGrid Grid.Row="2" ItemsSource="{Binding SummaryTable}" AutoGenerateColumns="True" Margin="10,10" IsReadOnly="True"/>
-
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock TextWrapping="Wrap" Margin="10 -8 0 0" Text="Zarobki całkowite firmy" VerticalAlignment="Top" />
+            <DataGrid Grid.Column="0" ItemsSource="{Binding SummaryTable}" AutoGenerateColumns="True" Margin="10,10" IsReadOnly="True"/>
+            <DataGrid Grid.Column="1" ItemsSource="{Binding EarningsTable}" AutoGenerateColumns="True" Margin="10 10" IsReadOnly="True"/>
+        </Grid>
     </Grid>
 </Window>
