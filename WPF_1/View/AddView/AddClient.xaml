@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPF_1.View.AddView.AddClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_1.View.AddView"
+        mc:Ignorable="d"
+        Title="Dodaj Klienta" Height="450" Width="800">
+    <Grid ToolTip="dsadasdas">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="ID Klienta:" VerticalAlignment="Bottom" Margin="10 0 0 0" ToolTip="UWAGA! IDKlienta jest kluczem głownym, który nie zawiera liczb!"/>
+        <TextBox Grid.Row="1" Name="idKlientaTextBox" Margin="10 0 10 5" ToolTip="UWAGA! IDKlienta jest kluczem głownym, który nie zawiera liczb!"/>
+
+        <TextBlock Grid.Row="2" Text="Nazwa Firmy:" VerticalAlignment="Bottom" Margin="10 0 0 0"/>
+        <TextBox Grid.Row="3" Name="nazwaFirmyTextBox" Margin="10 0 10 5"/>
+
+        <TextBlock Grid.Row="4" Text="Przedstawiciel:" VerticalAlignment="Bottom" Margin="10 0 0 0"/>
+        <TextBox Grid.Row="5" Name="przedstawicielTextBox" Margin="10 0 10 5"/>
+
+        <TextBlock Grid.Row="6" Text="Miasto:" VerticalAlignment="Bottom" Margin="10 0 0 0"/>
+        <TextBox Grid.Row="7" Name="miastoTextBox" Margin="10 0 10 5"/>
+
+        <TextBlock Grid.Row="8" Text="Region:" VerticalAlignment="Bottom" Margin="10 0 0 0"/>
+        <TextBox Grid.Row="9" Name="regionTextBox" Margin="10 0 10 5"/>
+
+        <TextBlock Grid.Row="10" Text="Telefon:" VerticalAlignment="Bottom" Margin="10 0 0 0"/>
+        <TextBox Grid.Row="11" Name="telefonTextBox" Margin="10 0 10 5"/>
+
+      
+
+        <Button  Grid.Row="12" Content="Dodaj Dane" Click="InsertButton_Click" Margin="200 5 200 5"/>
+        
+    </Grid>
+</Window>

@@ -22,14 +22,14 @@ namespace WPF_1.View
     /// </summary>
     public partial class MainWindow : Window
     {
-    
+
        
 
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainWindowViewModel();
-
+          
         }
 
         private bool isWindowOpen = false;
@@ -46,8 +46,12 @@ namespace WPF_1.View
 
        
                 isWindowOpen = true;
+                
                 modifyDatabase.Closed += (s, args) => { isWindowOpen = false; };
+             
             }
+       
+
         }
 
 
