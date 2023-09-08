@@ -85,6 +85,5 @@ namespace WPF_1.View
                 MessageBox.Show($"Wystąpił błąd: {ex.Message}");
             }
         }
-
     }
 }
